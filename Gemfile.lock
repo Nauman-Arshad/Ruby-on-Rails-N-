@@ -243,7 +243,7 @@ DEPENDENCIES
   font-awesome-sass (~> 4.6, >= 4.6.2)
   jbuilder (~> 2.7)
   listen (~> 3.3)
-  pg (~> 0.18.4)
+  pg (~> 0.18)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
