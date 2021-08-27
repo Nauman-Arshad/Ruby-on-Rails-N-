@@ -22,6 +22,7 @@ example-navbar-collapse-1" aria-expanded="false">
 
         <li><%= link_to "Contact Us", pages_contact_path %></li>
         <li><%= link_to "About us", pages_about_path %></li>
+        <li><%= link_to "Create an Article", new_artical_path %></li>
         <% if !current_user %>
         <li><%= link_to "Sign Up", new_user_registration_path %></li>
         <li><%= link_to "Sign in", new_user_session_path %></li>

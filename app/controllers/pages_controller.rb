@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def index
+    @articals =Artical.all
   end
 
   def contact
