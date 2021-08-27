@@ -1,3 +1,23 @@
+<% if current_user  %>
+<footer class="footer-distributed">
+  <div class="footer-right">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+  </div>
+  <div class="footer-left">
+    <p class="footer-links">
+      ·
+      <a class="page-scroll" href="#portfolio">Contact Us</a>
+      ·
+      <a class="page-scroll" href="#services">About Us</a>
+      ·
+    </p>
+    <p> </p>
+  </div>
+</footer>
+<% else %>
 <footer class="footer-distributed">
   <div class="footer-left">
     <h3>Company<span>logo</span></h3>
@@ -30,3 +50,5 @@
     </form>
   </div>
 </footer>
+</footer>
+<% end %>
