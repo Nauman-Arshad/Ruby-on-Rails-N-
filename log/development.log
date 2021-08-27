@@ -1320,3 +1320,364 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 11787ms (Views: 11755.6ms | ActiveRecord: 0.0ms | Allocations: 153481)
 
 
+Started GET "/" for 127.0.0.1 at 2021-08-27 15:10:50 +0500
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.2ms | Allocations: 121)
+  Rendered layouts/_foot.html.erb (Duration: 1.7ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 294.9ms | Allocations: 26597)
+Completed 200 OK in 346ms (Views: 308.9ms | ActiveRecord: 0.0ms | Allocations: 30257)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20210827113157)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar DEFAULT '' NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210827113157"]]
+  [1m[36mTRANSACTION (17.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (5.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-27 11:36:37.795874"], ["updated_at", "2021-08-27 11:36:37.795874"]]
+  [1m[36mTRANSACTION (12.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-08-27 16:38:07 +0500
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.8ms | Allocations: 118)
+  Rendered layouts/_foot.html.erb (Duration: 1.6ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 277.2ms | Allocations: 26611)
+Completed 200 OK in 336ms (Views: 292.8ms | ActiveRecord: 0.0ms | Allocations: 30638)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 16:41:30 +0500
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.4ms | Allocations: 118)
+  Rendered layouts/_foot.html.erb (Duration: 1.5ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 266.5ms | Allocations: 26606)
+Completed 200 OK in 328ms (Views: 280.1ms | ActiveRecord: 0.0ms | Allocations: 30633)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:08:52 +0500
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 2.1ms | Allocations: 242)
+  Rendered layouts/_foot.html.erb (Duration: 1.5ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 329.2ms | Allocations: 26731)
+Completed 200 OK in 393ms (Views: 345.7ms | ActiveRecord: 0.0ms | Allocations: 30759)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-08-27 17:08:55 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 2.0ms | Allocations: 221)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 553)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 72.2ms | Allocations: 9330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 35)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 116.7ms | Allocations: 17736)
+Completed 200 OK in 200ms (Views: 132.2ms | ActiveRecord: 3.2ms | Allocations: 27005)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:11:20 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 3.5ms | Allocations: 275)
+  Rendered layouts/_foot.html.erb (Duration: 1.4ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 96.0ms | Allocations: 9387)
+Completed 200 OK in 114ms (Views: 108.3ms | ActiveRecord: 0.0ms | Allocations: 10971)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-08-27 17:11:22 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 723)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:11:22 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 85)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 8422)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.0ms | Allocations: 8920)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-08-27 17:11:25 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 2.9ms | Allocations: 180)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 3.4ms | Allocations: 454)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 2547)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 139.3ms | Allocations: 11981)
+Completed 200 OK in 158ms (Views: 154.6ms | ActiveRecord: 0.0ms | Allocations: 14023)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-08-27 17:11:28 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 224)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 31.6ms | Allocations: 2244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 94.4ms | Allocations: 10903)
+Completed 200 OK in 127ms (Views: 114.5ms | ActiveRecord: 0.0ms | Allocations: 13649)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:11:34 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.8ms | Allocations: 81)
+  Rendered layouts/_foot.html.erb (Duration: 0.3ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 8428)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.0ms | Allocations: 8947)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-08-27 17:17:40 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 4ms (Allocations: 427)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:17:40 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 2.5ms | Allocations: 268)
+  Rendered layouts/_foot.html.erb (Duration: 0.9ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 70.8ms | Allocations: 9511)
+Completed 200 OK in 83ms (Views: 78.5ms | Allocations: 11073)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-08-27 17:17:43 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 5.1ms | Allocations: 504)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 19.5ms | Allocations: 2082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.4ms | Allocations: 86)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 103.4ms | Allocations: 11378)
+Completed 200 OK in 117ms (Views: 114.6ms | Allocations: 13546)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-08-27 17:17:44 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 4ms (Allocations: 449)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:17:44 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.8ms | Allocations: 81)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 8358)
+Completed 200 OK in 63ms (Views: 61.1ms | Allocations: 8828)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-08-27 17:17:46 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 3.0ms | Allocations: 180)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 81)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 23.8ms | Allocations: 1946)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 89.6ms | Allocations: 10449)
+Completed 200 OK in 112ms (Views: 108.4ms | Allocations: 12812)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-08-27 17:17:47 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 119)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 988)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.0ms | Allocations: 68)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 117.6ms | Allocations: 9433)
+Completed 200 OK in 128ms (Views: 123.8ms | Allocations: 10637)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-08-27 17:17:48 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 4ms (Allocations: 407)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:17:48 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.9ms | Allocations: 81)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 8506)
+Completed 200 OK in 64ms (Views: 62.0ms | Allocations: 8960)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-08-27 17:18:11 +0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 71)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.2ms | Allocations: 68)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 103.1ms | Allocations: 9932)
+Completed 200 OK in 109ms (Views: 105.9ms | Allocations: 10552)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-08-27 17:18:32 +0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"naumankhan642@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "naumankhan642@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "naumankhan642@gmail.com"], ["encrypted_password", "$2a$12$itd1JH5391gx3q4XvSuGh.MTSaRC7eMpztLrlO0eod41v58MxbijO"], ["created_at", "2021-08-27 12:18:34.293653"], ["updated_at", "2021-08-27 12:18:34.293653"]]
+  [1m[36mTRANSACTION (8.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1397ms (ActiveRecord: 14.4ms | Allocations: 15339)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:18:34 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.8ms | Allocations: 88)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 67.5ms | Allocations: 8996)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.0ms | Allocations: 9535)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-08-27 17:18:39 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 38ms (ActiveRecord: 0.8ms | Allocations: 2978)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:18:39 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 85)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 8520)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.0ms | Allocations: 9048)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-08-27 17:18:41 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 119)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.3ms | Allocations: 68)
+  Rendered layouts/_foot.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 102.0ms | Allocations: 9905)
+Completed 200 OK in 109ms (Views: 104.8ms | ActiveRecord: 0.0ms | Allocations: 10617)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-08-27 17:18:45 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"naumankhan642@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "naumankhan642@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 1239ms (ActiveRecord: 1.1ms | Allocations: 2047)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"naumankhan642@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 121)
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.6ms | Allocations: 70)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 9553)
+Completed 200 OK in 1277ms (Views: 66.9ms | ActiveRecord: 0.0ms | Allocations: 10322)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-27 17:19:48 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.1ms | Allocations: 81)
+  Rendered layouts/_foot.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 98.3ms | Allocations: 8432)
+Completed 200 OK in 105ms (Views: 101.8ms | ActiveRecord: 0.0ms | Allocations: 8912)
+
+
