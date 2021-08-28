@@ -5,6 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
+      <th>Created by</th>
       <th>Title</th>
       <th>Body</th>
       <th colspan="3"></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @articals.each do |artical| %>
       <tr>
+        <td><%= artical.user.username %></td>
         <td><%= artical.title %></td>
         <td><%= artical.body %></td>
         <td><%= link_to 'Show', artical %></td>

@@ -138,10 +138,11 @@
     <!-- Side Widget Well -->
     <div class="well">
       <h4>Recents Posts</h4>
-      <% @articals.each do |a|  %>
-    <strong><%= link_to a.title, a %></strong>
-    <p><%=truncate (a.body) %></p>
-    <% end %>
+      <% @articals.each do |a| %>
+        Created by: <%= a.user.username %><br />
+        <strong><%= link_to a.title, a %></strong>
+        <p><%= truncate(a.body) %></p>
+      <% end %>
     </div>
   </div>
 </div>

@@ -1,5 +1,6 @@
 class ArticalsController < ApplicationController
   before_action :set_artical, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /articals or /articals.json
   def index
@@ -12,7 +13,7 @@ class ArticalsController < ApplicationController
 
   # GET /articals/new
   def new
-    @artical = Artical.new
+    @artical = current_user.articals.build
   end
 
   # GET /articals/1/edit
@@ -21,7 +22,7 @@ class ArticalsController < ApplicationController
 
   # POST /articals or /articals.json
   def create
-    @artical = Artical.new(artical_params)
+    @artical = current_user.articals.build(artical_params)
 
     respond_to do |format|
       if @artical.save
